@@ -1,0 +1,620 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/fnunezc/ontologies/2023/3/SpanishWineOntology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/fnunezc/ontologies/2023/3/SpanishWineOntology">
+    <Prefix name="" IRI="http://www.semanticweb.org/fnunezc/ontologies/2023/3/SpanishWineOntology/"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="swrl" IRI="http://www.w3.org/2003/11/swrl#"/>
+    <Prefix name="swrla" IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"/>
+    <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
+    <Prefix name="SpanishWineOntology" IRI="http://www.semanticweb.org/fnunezc/ontologies/2023/3/SpanishWineOntology#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <Literal>Francisco Luis Nuñez Camacho</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <Literal>The Spanish Wine Ontology is an ontology that models the concepts and relationships related to the production, characteristics, and consumption of wine from Spain. It provides a formal and standardized representation of wine-related knowledge, including wineries, wine varieties, regions, vintages, ratings, prices, and other relevant properties.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:questions"/>
+        <Literal>- What is the highest price of a fortified wine?
+- What is the highest rating given to a white wine?
+- How many wines with a vintage prior to the year 2010 have a rating higher than 4?
+- Are there wines without vintage in Ribera del Duero?</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <Literal>Spanish Wine Ontology</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#BiologicalAgeing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FortifiedWine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GrapeVariety"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OxidizingAging"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrioratRed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RedGrapes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RedWine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RiasBaixasWhite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RiojaCrianza"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RiojaRed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RiojaReserva"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RiveraDelDueroRed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RoseWine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RuedaWhite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SparklingWine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SweetWine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ToroRed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WhiteGrapes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WhiteWine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Winery"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#madeWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#producedBy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAgingTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAlcoholicContent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRating"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cuatro_Palmas_Amontillado"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dos__Cortados_Palo_Cortado_Solera_Especial_Aged_20_Years"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fino_La_Barejuela"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Luis_Perez"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tio_Pepe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Williams_&amp;_Humbert"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:questions"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#BiologicalAgeing"/>
+        <Class IRI="#FortifiedWine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FortifiedWine"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Wine"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#hasAlcoholicContent"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:float"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">15.0</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OxidizingAging"/>
+        <Class IRI="#FortifiedWine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrioratRed"/>
+        <Class IRI="#RedWine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RedGrapes"/>
+        <Class IRI="#GrapeVariety"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RedWine"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RiasBaixasWhite"/>
+        <Class IRI="#WhiteWine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RiojaCrianza"/>
+        <Class IRI="#RiojaRed"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RiojaRed"/>
+        <Class IRI="#RedWine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RiojaReserva"/>
+        <Class IRI="#RiojaRed"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RiveraDelDueroRed"/>
+        <Class IRI="#RedWine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RoseWine"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RuedaWhite"/>
+        <Class IRI="#WhiteWine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SparklingWine"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SweetWine"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ToroRed"/>
+        <Class IRI="#RedWine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WhiteGrapes"/>
+        <Class IRI="#GrapeVariety"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WhiteWine"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wine"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasRating"/>
+            <DataIntersectionOf>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:float"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.0</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:float"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">5.0</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataIntersectionOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#OxidizingAging"/>
+        <NamedIndividual IRI="#Cuatro_Palmas_Amontillado"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OxidizingAging"/>
+        <NamedIndividual IRI="#Dos__Cortados_Palo_Cortado_Solera_Especial_Aged_20_Years"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BiologicalAgeing"/>
+        <NamedIndividual IRI="#Fino_La_Barejuela"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Winery"/>
+        <NamedIndividual IRI="#Luis_Perez"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Winery"/>
+        <NamedIndividual IRI="#Tio_Pepe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Winery"/>
+        <NamedIndividual IRI="#Williams_&amp;_Humbert"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#producedBy"/>
+        <NamedIndividual IRI="#Cuatro_Palmas_Amontillado"/>
+        <NamedIndividual IRI="#Tio_Pepe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#producedBy"/>
+        <NamedIndividual IRI="#Dos__Cortados_Palo_Cortado_Solera_Especial_Aged_20_Years"/>
+        <NamedIndividual IRI="#Williams_&amp;_Humbert"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#producedBy"/>
+        <NamedIndividual IRI="#Fino_La_Barejuela"/>
+        <NamedIndividual IRI="#Luis_Perez"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAlcoholicContent"/>
+        <NamedIndividual IRI="#Cuatro_Palmas_Amontillado"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">18.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRating"/>
+        <NamedIndividual IRI="#Cuatro_Palmas_Amontillado"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAlcoholicContent"/>
+        <NamedIndividual IRI="#Dos__Cortados_Palo_Cortado_Solera_Especial_Aged_20_Years"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">18.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRating"/>
+        <NamedIndividual IRI="#Dos__Cortados_Palo_Cortado_Solera_Especial_Aged_20_Years"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAlcoholicContent"/>
+        <NamedIndividual IRI="#Fino_La_Barejuela"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">15.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRating"/>
+        <NamedIndividual IRI="#Fino_La_Barejuela"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.3</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#madeWith"/>
+        <Class IRI="#Wine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#producedBy"/>
+        <Class IRI="#Wine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#madeWith"/>
+        <Class IRI="#GrapeVariety"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#producedBy"/>
+        <Class IRI="#Winery"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasAgingTime"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasAlcoholicContent"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasRating"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAgingTime"/>
+        <Class IRI="#Wine"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAlcoholicContent"/>
+        <Class IRI="#Wine"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasRating"/>
+        <Class IRI="#Wine"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAgingTime"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAlcoholicContent"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasRating"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S3</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#BiologicalAgeing"/>
+                <Variable IRI="/wine"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasAgingTime"/>
+                <Variable IRI="/wine"/>
+                <Variable IRI="/time"/>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom abbreviatedIRI="swrlb:greaterThanOrEqual">
+                <Variable IRI="/time"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+            </BuiltInAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:lessThanOrEqual">
+                <Variable IRI="/time"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S1</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#FortifiedWine"/>
+                <Variable IRI="/fw"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasAlcoholicContent"/>
+                <Variable IRI="/fw"/>
+                <Variable IRI="/alc"/>
+            </DataPropertyAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:lessThan">
+                <Variable IRI="/alc"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">17.0</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#BiologicalAgeing"/>
+                <Variable IRI="/fw"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S2</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#RiojaReserva"/>
+                <Variable IRI="/wine"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasAgingTime"/>
+                <Variable IRI="/wine"/>
+                <Variable IRI="/time"/>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom abbreviatedIRI="swrlb:greaterThanOrEqual">
+                <Variable IRI="/time"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BiologicalAgeing</IRI>
+        <Literal>This class represents a type of fortified wine that has undergone biological ageing, a process where a layer of yeast grows on the surface of the wine, protecting it from oxidation and giving it a distinct flavor profile. Examples include fino and manzanilla.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FortifiedWine</IRI>
+        <Literal>Subclass of Wine representing a wine that has had additional spirits added to it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#FortifiedWine</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Fortified_wine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#GrapeVariety</IRI>
+        <Literal>Class representing the variety of grape used to produce a wine.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OxidizingAging</IRI>
+        <Literal>This class represents a type of fortified wine that has undergone oxidizing ageing, a process where the wine is exposed to air, leading to a darker color and a nutty flavor. Examples include amontillado and oloroso.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PrioratRed</IRI>
+        <Literal>A subclass of RedWine that is produced in the Priorat region of Catalonia, Spain and is known for its bold and full-bodied flavor profile.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RedGrapes</IRI>
+        <Literal>A class that represents red grape varieties used in winemaking. Subclass of GrapeVariety.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RedWine</IRI>
+        <Literal>A subclass of Wine that is made from red grapes and is typically fermented with the grape skins and seeds, giving it its characteristic color and tannins. Subclasses include PrioratRed, RiojaRed, RiveraDelDueroRed, and ToroRed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RiasBaixasWhite</IRI>
+        <Literal>A subclass of WhiteWine that is produced in the Rias Baixas region of Galicia, Spain and is known for its crisp and acidic flavor profile.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RiojaCrianza</IRI>
+        <Literal>This class represents a type of Rioja red wine that has been aged for a minimum of two years, with at least one year in oak barrels.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RiojaRed</IRI>
+        <Literal>A subclass of RedWine that is produced in the Rioja region of Spain and is known for its balanced flavor profile and aging potential.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RiojaReserva</IRI>
+        <Literal>This class represents a type of Rioja red wine that has been aged for a minimum of three years, with at least one year in oak barrels.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RiveraDelDueroRed</IRI>
+        <Literal>A subclass of RedWine that is produced in the Ribera del Duero region of Spain and is known for its full-bodied and fruity flavor profile.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RoseWine</IRI>
+        <Literal>A subclass of Wine that has a pink color and is typically made by allowing the grape skins to come into contact with the juice for a short period of time.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RuedaWhite</IRI>
+        <Literal>A subclass of WhiteWine that is produced in the Rueda region of Spain and is known for its light and refreshing flavor profile.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SparklingWine</IRI>
+        <Literal>A subclass of Wine that has high levels of carbon dioxide, resulting in bubbles.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SweetWine</IRI>
+        <Literal>A subclass of Wine that has a higher level of residual sugar than other types of wine, resulting in a sweet taste.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ToroRed</IRI>
+        <Literal>A subclass of RedWine that is produced in the Toro region of Spain and is known for its high alcohol content and bold flavor profile.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WhiteGrapes</IRI>
+        <Literal>A class that represents white grape varieties used in winemaking. Subclass of GrapeVariety.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WhiteWine</IRI>
+        <Literal>A subclass of Wine that is made from white or green grapes and is typically fermented without the grape skins, resulting in a lighter color and less tannins. Subclasses include RiasBaixasWhite and RuedaWhite.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Wine</IRI>
+        <Literal>Class representing a type of wine. The wine class is the parent class for several subclasses representing specific types of wine, including red, white, rose, sparkling, and sweet wines, as well as fortified wines.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Wine</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/ontology/Wine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Winery</IRI>
+        <Literal>A class that represents a place where wine is produced, typically consisting of vineyards and a facility for winemaking.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Winery</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/ontology/Winery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAlcoholicContent</IRI>
+        <Literal>Indicates the percentage of alcohol by volume (ABV) in a wine. This property provides important information about the strength of a wine and can help consumers make informed decisions about consumption. The ABV can vary depending on several factors such as grape variety, winemaking technique, and climate.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasRating</IRI>
+        <Literal>This data property represents the rating of a wine on a scale from 0 to 5, where 0 is the lowest rating and 5 is the highest rating. The value of this property is a float.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#madeWith</IRI>
+        <Literal>This property relates a wine to the grape variety used in its production. It specifies the grape variety or varieties that were used in making a particular wine.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#producedBy</IRI>
+        <Literal>This property relates a wine to the winery or producer that made it. It specifies the name of the winery or producer that made a particular wine.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
