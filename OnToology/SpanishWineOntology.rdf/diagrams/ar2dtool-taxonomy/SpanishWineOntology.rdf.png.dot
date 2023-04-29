@@ -1,0 +1,24 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "SpanishWineOntology:OxidizingAging" "SpanishWineOntology:GrapeVariety" "SpanishWineOntology:RiasBaixasWhite" "SpanishWineOntology:SweetWine" "SpanishWineOntology:ToroRed" "SpanishWineOntology:RoseWine" "SpanishWineOntology:RiveraDelDueroRed" "SpanishWineOntology:RiojaRed" "SpanishWineOntology:RuedaWhite" "SpanishWineOntology:FortifiedWine" "SpanishWineOntology:WhiteGrapes" "-2a3b97ae:187cd4cc123:-7ffc" "SpanishWineOntology:PrioratRed" "SpanishWineOntology:RedWine" "SpanishWineOntology:SparklingWine" "SpanishWineOntology:Wine" "SpanishWineOntology:RiojaCrianza" "SpanishWineOntology:WhiteWine" "SpanishWineOntology:RiojaReserva" "SpanishWineOntology:BiologicalAgeing" "SpanishWineOntology:RedGrapes" ; /*classes style*/
+	"SpanishWineOntology:RedWine" -> "SpanishWineOntology:Wine" [ label = "rdfs:subClassOf" ];
+	"SpanishWineOntology:RiojaCrianza" -> "SpanishWineOntology:RiojaRed" [ label = "rdfs:subClassOf" ];
+	"SpanishWineOntology:RiojaReserva" -> "SpanishWineOntology:RiojaRed" [ label = "rdfs:subClassOf" ];
+	"SpanishWineOntology:RedGrapes" -> "SpanishWineOntology:GrapeVariety" [ label = "rdfs:subClassOf" ];
+	"SpanishWineOntology:OxidizingAging" -> "SpanishWineOntology:FortifiedWine" [ label = "rdfs:subClassOf" ];
+	"SpanishWineOntology:RiojaRed" -> "SpanishWineOntology:RedWine" [ label = "rdfs:subClassOf" ];
+	"SpanishWineOntology:RuedaWhite" -> "SpanishWineOntology:WhiteWine" [ label = "rdfs:subClassOf" ];
+	"SpanishWineOntology:ToroRed" -> "SpanishWineOntology:RedWine" [ label = "rdfs:subClassOf" ];
+	"SpanishWineOntology:FortifiedWine" -> "-2a3b97ae:187cd4cc123:-7ffc" [ label = "rdfs:subClassOf" ];
+	"SpanishWineOntology:RiveraDelDueroRed" -> "SpanishWineOntology:RedWine" [ label = "rdfs:subClassOf" ];
+	"SpanishWineOntology:SweetWine" -> "SpanishWineOntology:Wine" [ label = "rdfs:subClassOf" ];
+	"SpanishWineOntology:BiologicalAgeing" -> "SpanishWineOntology:FortifiedWine" [ label = "rdfs:subClassOf" ];
+	"SpanishWineOntology:WhiteWine" -> "SpanishWineOntology:Wine" [ label = "rdfs:subClassOf" ];
+	"SpanishWineOntology:SparklingWine" -> "SpanishWineOntology:Wine" [ label = "rdfs:subClassOf" ];
+	"SpanishWineOntology:RoseWine" -> "SpanishWineOntology:Wine" [ label = "rdfs:subClassOf" ];
+	"SpanishWineOntology:WhiteGrapes" -> "SpanishWineOntology:GrapeVariety" [ label = "rdfs:subClassOf" ];
+	"SpanishWineOntology:PrioratRed" -> "SpanishWineOntology:RedWine" [ label = "rdfs:subClassOf" ];
+	"SpanishWineOntology:RiasBaixasWhite" -> "SpanishWineOntology:WhiteWine" [ label = "rdfs:subClassOf" ];
+
+}
